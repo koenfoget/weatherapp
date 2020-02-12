@@ -1,2 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: $main_font;
+}
+
+.body {
+  width: 100%;
+  background-color: $bg_main;
+}
+
+.current {
+  padding: 2%;
+  color: $text_dark;
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: $text_light;
+  border-radius: 20%;
+
+  .heading_scnd {
+    margin-bottom: 0.67em;
+  }
+}
+
+.cities {
+  padding-top: 10%;
+  color: $text_light;
+  width: 25%;
+  margin: 0 auto;
+}

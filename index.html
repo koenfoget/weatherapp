@@ -2,21 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/index.js"></script>
 </head>
-<body>
-    <div class="weather_container">
-        <div class="weather_display">
+<body class="body">
+<section class="current">
+    <div class="temp_display">
 
-        </div>
-        <div class="temp_display">
-
-        </div>
-        <div class="location_display">
-
-        </div>
     </div>
+    <div class="weather_display">
+
+    </div>
+    <div class="location_display">
+
+    </div>
+</section>
+<section class="cities">
+        <form class="form">
+            <label for="city"></label>
+            <input id="city" class="add-city" type="text" placeholder="search a city" />
+            <button type="button" class="button">SUBMIT</button>
+        </form>
+</section>
+<script src="assets/js/index.js"></script>
 </body>
 </html>
