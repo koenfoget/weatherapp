@@ -12,6 +12,7 @@ function fetchAll(url, current = false) {
             if (response.ok) {
                 response.json().then(function (data) {
                     var div = document.createElement('div');
+                    div.classList.add( 'city-block');
                     // var wtemp = document.getElementsByClassName("temp_display");
                     // var weather = document.getElementsByClassName("weather_display");
                     // var location = document.getElementsByClassName("location_display");
@@ -54,24 +55,8 @@ function showPosition(position) {
 
 }
 
-
-// function getLocation() {
-//     document.querySelector('.button').addEventListener("click", function () {
-//         var city = document.querySelector('.add-city').value;
-//         const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=d518e802e2b3693fb0123bb620f7d420&units=metric';
-//         console.log(url);
-//         fetchAll(url);
-//     });
-// }
-
 function render(element) {
     return document.body.appendChild(element);
-}
-
-function getElement() {
-    var div = document.createElement('div');
-    div.setAttribute('class', 'city-block');
-    document.body.appendChild(div);
 }
 
 function getLocation() {
@@ -88,4 +73,3 @@ function getLocation() {
 
 getCurrent();
 getLocation();
-getElement();
