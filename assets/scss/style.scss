@@ -36,5 +36,19 @@
 }
 
 .city-block {
+  padding: 2%;
+  color: $text_dark;
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: $text_light;
+  border-radius: 20%;
+}
+
+.delete {
+  height: 5%;
+  width: auto;
+  background-color: black;
   color: $text_light;
+  float: right;
 }

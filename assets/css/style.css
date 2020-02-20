@@ -28,4 +28,17 @@
   margin: 0 auto; }
 
 .city-block {
-  color: #fff; }
+  padding: 2%;
+  color: #1e2432;
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: #fff;
+  border-radius: 20%; }
+
+.delete {
+  height: 5%;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  float: right; }
