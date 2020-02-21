@@ -42,6 +42,9 @@ function fetchAll(url, current = false) {
                         return;
                     }
 
+                    // let doubles = JSON.parse(localStorage['cityName']);
+                    // let repeated=doubles.filter(function(a){ return})
+
                     btn.addEventListener("click", function (e){
 
                         let weatheritem = JSON.parse(localStorage.getItem('cityName'));
@@ -49,6 +52,7 @@ function fetchAll(url, current = false) {
                             console.log(item !== e.target.getAttribute('data-key'));
                             return item !== e.target.getAttribute('data-key').toLowerCase();
                         });
+                        div.remove();
 
                         localStorage.setItem('cityName', JSON.stringify(weatheritem));
                     });

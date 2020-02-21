@@ -17,28 +17,57 @@
   margin: 0 auto;
   margin-top: 5%;
   background-color: #fff;
-  border-radius: 20%; }
+  border-radius: 20%;
+  -webkit-box-shadow: 5px 5px #ff8c00;
+  box-shadow: 5px 5px #ff8c00; }
   .current .heading_scnd {
     margin-bottom: 0.67em; }
 
 .cities {
-  padding-top: 10%;
+  padding-top: 5%;
   color: #fff;
   width: 25%;
   margin: 0 auto; }
+  .cities .add-city {
+    padding: 6%;
+    font-size: 1em;
+    font-family: roboto;
+    color: #1e2432;
+    background-color: #fff;
+    border-radius: 10%; }
+  .cities .button {
+    background-color: #ff1e42;
+    padding: 4%;
+    font-family: roboto;
+    font-size: 1em;
+    border-radius: 25%; }
 
 .city-block {
   padding: 2%;
   color: #1e2432;
   width: 25%;
-  margin: 0 auto;
   margin-top: 5%;
   background-color: #fff;
-  border-radius: 20%; }
-
-.delete {
-  height: 5%;
-  width: auto;
-  background-color: black;
-  color: #fff;
-  float: right; }
+  border-radius: 20%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 3%;
+  -webkit-box-shadow: 5px 5px #ff8c00;
+  box-shadow: 5px 5px #ff8c00; }
+  .city-block .delete {
+    margin-top: 3%;
+    width: 17%;
+    background-color: #c3112d;
+    color: #fff;
+    padding: 2%;
+    font-family: roboto;
+    font-size: 1em;
+    border-radius: 25%; }
