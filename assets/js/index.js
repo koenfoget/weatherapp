@@ -42,8 +42,7 @@ function fetchAll(url, current = false) {
                         return;
                     }
 
-                    // let doubles = JSON.parse(localStorage['cityName']);
-                    // let repeated=doubles.filter(function(a){ return})
+
 
                     btn.addEventListener("click", function (e){
 
@@ -56,6 +55,7 @@ function fetchAll(url, current = false) {
 
                         localStorage.setItem('cityName', JSON.stringify(weatheritem));
                     });
+
 
                     div.appendChild(btn);
 
@@ -83,8 +83,19 @@ function render(element) {
 function getLocation() {
     document.querySelector('.button').addEventListener("click", function () {
         let value = document.querySelector(".add-city").value;
+
+        let weatheritem = JSON.parse(localStorage.getItem('cityName'));
+        if (!weatheritem) {
+            weatheritem = [];
+        }
+        
+        if ( weatheritem.indexOf(value.toLowerCase()) !== -1 )
+        {
+            return alert ("duplicated")
+        }
         // document.querySelector(".test").append(value);
         const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + value + '&appid=d518e802e2b3693fb0123bb620f7d420&units=metric';
+
         console.log(url);
         fetchAll(url);
         saveLocalStorageItem(value)
